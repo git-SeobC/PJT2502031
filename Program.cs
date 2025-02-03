@@ -4,7 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int size = 10;
+            // 별 찍기
+            for (int j = 1; j <= size; j++)
+            {
+                for (int k = 1; k <= size - j; k++)
+                {
+                    Console.Write(' ');
+                }
+                for (int i = 1; i <= j; i++)
+                {
+                    Console.Write('*');
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
